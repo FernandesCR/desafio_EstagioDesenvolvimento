@@ -1,0 +1,102 @@
+.itens-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.item-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.item-card p {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.item-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+#itensContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#itensContainer h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#itensContainer > p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.itens-info {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 40px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.itens-info h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.itens-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .itens-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .item-img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .itens-info {
+        padding: 15px;
+    }
+}

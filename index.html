@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>PokeDex</title>
+</head>
+
+<body>
+    <section name="navBar">
+        <div>
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <a href="index.html" id="logoLink"><img src="imagens/pokebola.gif" alt="Logo PokeDex"></a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">PokeDex</a></li>
+                    <li class="dropdown">
+                        <a href="paginas/tipos/index.html" class="dropbtn">Tipos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="paginas/bug/index.html">Bug</a></li>
+                            <li><a href="paginas/dark/index.html">Dark</a></li>
+                            <li><a href="paginas/dragon/index.html">Dragon</a></li>
+                            <li><a href="paginas/electric/index.html">Electric</a></li>
+                            <li><a href="paginas/fairy/index.html">Fairy</a></li>
+                            <li><a href="paginas/Fighting/index.html">Fighting</a></li>
+                            <li><a href="paginas/fire/index.html">Fire</a></li>
+                            <li><a href="paginas/flying/index.html">Flying</a></li>
+                            <li><a href="paginas/ghost/index.html">Ghost</a></li>
+                            <li><a href="paginas/grass/index.html">Grass</a></li>
+                            <li><a href="paginas/ground/index.html">Ground</a></li>
+                            <li><a href="paginas/ice/index.html">Ice</a></li>
+                            <li><a href="paginas/normal/index.html">Normal</a></li>
+                            <li><a href="paginas/poison/index.html">Poison</a></li>
+                            <li><a href="paginas/psychic/index.html">Psychic</a></li>
+                            <li><a href="paginas/rock/index.html">Rock</a></li>
+                            <li><a href="paginas/steel/index.html">Steel</a></li>
+                            <li><a href="paginas/water/index.html">Water</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="paginas/itens/index.html" class="dropbtn">Itens</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="paginas/frutas/index.html">Frutas</a></li>
+                            <li><a href="paginas/pokebolas/index.html">Pokébolas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section id="blocoCentral">
+        <section id="listaSection">
+            <div id="listaPokemon">
+                <ul id="pokemonList">Lista Pokemon</ul>
+            </div>
+        </section>
+        <section id="displaySection">
+            <div class="nav-search">
+                <div class="group">
+                    <form class="form">
+                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                        <input placeholder="Caçar pokemon" type="search" class="search">
+                    </form>
+                </div>
+            </div>
+            <div id="cor">
+                <div id="cor2"></div>
+                <img src="" alt="pokemon" class="pokemonImage">
+                <h1 class="pokemonDados"></h1>
+                <div class="typeImages"></div>
+            </div>
+        </section>
+        <section id="infoComparacaoSection">
+            <div id="container">
+                <div id="NameBloco">
+                    <h1 class="pokemonNumber"></h1> -
+                    <h1 class="pokemonName"></h1>
+                </div>
+                <div>
+                    <div id="tipo">
+                        <h1 id="tipos"></h1>
+                        <div class="typeImagesName"></div>
+                    </div>
+                    <div id="formas">
+                        <h1 id="formasTitulo">Formas</h1>
+                        <button id="btnShiny">Shiny</button>
+                        <button id="btnNormal">Normal</button>
+                    </div>
+                    <div id="totalStats">
+                        <h1 id="totalStatsTitulo">Total Stats:</h1>
+                        <span id="totalStatsValor"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="comparadorContainer">
+                <div id="selecaoComparacao">
+                    <p>Selecione os Pokémon para comparar:</p>
+                    <button id="btnSelectComparar1">Selecionar 1º</button>
+                    <button id="btnSelectComparar2">Selecionar 2º</button>
+                </div>
+                <div id="comparacao">
+                    <h2>Comparar Pokémon</h2>
+                    <div class="pokemonComparacaoDisplay">
+                        <div id="pokemonComparacao1">Selecione o 1º Pokémon</div>
+                        <div id="pokemonComparacao2">Selecione o 2º Pokémon</div>
+                    </div>
+                    <button id="btnComparar" disabled>Comparar</button>
+                    <button id="btnDescomparar" style="display: none;">Descomparar</button>
+                    <div id="resultadoComparacao"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+        <section id="tiposContainer">
+        <h1>Tipos de Pokémon</h1>
+        <p>Escolha um tipo de Pokémon para ver mais informações:</p>
+        
+        <div class="tipos-grid">
+            <div class="tipo-card">
+                <a href="../paginas/bug/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Bug.png" alt="Bug" class="tipo-img">
+                    <h3>Bug</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/dark/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Dark.png" alt="Dark" class="tipo-img">
+                    <h3>Dark</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/dragon/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Dragon.png" alt="Dragon" class="tipo-img">
+                    <h3>Dragon</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/electric/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Electric.png" alt="Electric" class="tipo-img">
+                    <h3>Electric</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/fairy/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Fairy.png" alt="Fairy" class="tipo-img">
+                    <h3>Fairy</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/Fighting/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Fighting.png" alt="Fighting" class="tipo-img">
+                    <h3>Fighting</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/fire/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Fire.png" alt="Fire" class="tipo-img">
+                    <h3>Fire</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/flying/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Flying.png" alt="Flying" class="tipo-img">
+                    <h3>Flying</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/ghost/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Ghost.png" alt="Ghost" class="tipo-img">
+                    <h3>Ghost</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/grass/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Grass.png" alt="Grass" class="tipo-img">
+                    <h3>Grass</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/ground/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Ground.png" alt="Ground" class="tipo-img">
+                    <h3>Ground</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/ice/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Ice.png" alt="Ice" class="tipo-img">
+                    <h3>Ice</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/normal/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Normal.png" alt="Normal" class="tipo-img">
+                    <h3>Normal</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/poison/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Poison.png" alt="Poison" class="tipo-img">
+                    <h3>Poison</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/psychic/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Psychic.png" alt="Psychic" class="tipo-img">
+                    <h3>Psychic</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/rock/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Rock.png" alt="Rock" class="tipo-img">
+                    <h3>Rock</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/steel/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Steel.png" alt="Steel" class="tipo-img">
+                    <h3>Steel</h3>
+                </a>
+            </div>
+            <div class="tipo-card">
+                <a href="../paginas/water/index.html">
+                    <img src="../../imagens/tipos/Pokemon_Type_Icon_Water.png" alt="Water" class="tipo-img">
+                    <h3>Water</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>Projeto PokeDex @Fernandes</footer>
+
+<script src="js/script.js"></script>
+
+</html>

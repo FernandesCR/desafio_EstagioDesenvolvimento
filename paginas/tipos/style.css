@@ -1,0 +1,72 @@
+.tipos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tipo-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tipo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tipo-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.tipo-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+#tiposContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tiposContainer h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#tiposContainer p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Estilos para o dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .tipos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+    }
+    
+    .tipo-img {
+        width: 60px;
+        height: 60px;
+    }
+}

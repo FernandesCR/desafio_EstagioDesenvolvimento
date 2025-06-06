@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../imagens/favicon.ico" type="image/png">
+    <title>PokeDex</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <section name="navBar">
+        <div>
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <a href="index.html"><img src="../../imagens/pokebola.gif" alt="Logo"></a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../../index.html">PokeDex</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Tipos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../bug/index.html">Bug</a></li>
+                            <li><a href="../dark/index.html">Dark</a></li>
+                            <li><a href="../dragon/index.html">Dragon</a></li>
+                            <li><a href="../electric/index.html">Electric</a></li>
+                            <li><a href="../fairy/index.html">Fairy</a></li>
+                            <li><a href="../fighting/index.html">Fighting</a></li>
+                            <li><a href="../fire/index.html">Fire</a></li>
+                            <li><a href="../flying/index.html">Flying</a></li>
+                            <li><a href="../ghost/index.html">Ghost</a></li>
+                            <li><a href="../grass/index.html">Grass</a></li>
+                            <li><a href="../ground/index.html">Ground</a></li>
+                            <li><a href="../ice/index.html">Ice</a></li>
+                            <li><a href="../normal/index.html">Normal</a></li>
+                            <li><a href="../poison/index.html">Poison</a></li>
+                            <li><a href="../psychic/index.html">Psychic</a></li>
+                            <li><a href="../rock/index.html">Rock</a></li>
+                            <li><a href="../steel/index.html">Steel</a></li>
+                            <li><a href="../water/index.html">Water</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Itens</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../pokebolas/index.html">PokeBolas</a></li>
+                            <li><a href="/paginas/frutas/index.html">Berrys</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section>
+
+        <div>
+            <h1 id="titulo">Todos os Pokemons com o tipo Ghost</h1>
+        </div>
+
+    </section>
+
+    <section class="sectionCard">
+        <div id="pokeCardContainer"></div>
+        <div class="expanded-info" id="expandedInfo">
+        </div>
+        <div id="typeImagesNameContainer" class="typeImagesName"></div>
+    </section>
+
+    <div class="loading-overlay">
+        <img src="../../imagens/carregamento.gif" alt="Loading...">
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

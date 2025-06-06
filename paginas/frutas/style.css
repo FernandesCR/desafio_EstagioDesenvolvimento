@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #dddddd;
+    min-height: 101vh;
+    font-family: 'Oxanium', cursive;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: auto;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.nav-menu li:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    border-bottom: #000000;
+    z-index: 1;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+    margin: 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #9c9c9c;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-logo img {
+    width: 60%;
+}
+
+.nav-logo {
+    text-align: left;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+/* --- */
+
+
+.card {
+    width: 150px;
+    border-radius: 15px;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    width: calc(50% - 20px);
+    max-width: 200px;
+    height: auto;
+    border-radius: 15px;
+    background-color: #969ea5;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all .2s;
+
+}
+
+
+.id,
+.name {
+    margin-top: 7px;
+}
+
+.name {
+    margin-bottom: 7px;
+}
+
+.id {
+    background-color: rgb(94, 94, 94);
+    width: fit-content;
+    border-radius: 7px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1px 5px;
+}
+
+.sectionCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 0px 30px 1px rgba(39, 39, 39, 0.3);
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-overlay img {
+    width: 140px;
+    height: 100px;
+}
